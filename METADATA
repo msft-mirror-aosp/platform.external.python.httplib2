@@ -1,0 +1,17 @@
+name: "httplib2"
+description:
+    "httplib2 is a comprehensive HTTP client library, httplib2.py supports "
+    "many features left out of other HTTP libraries."
+
+third_party {
+  url {
+    type: HOMEPAGE
+    value: "https://github.com/httplib2/httplib2"
+  }
+  url {
+    type: GIT
+    value: "https://github.com/httplib2/httplib2/"
+  }
+  version: "0.11.3"
+  last_upgrade_date { year: 2018 month: 6 day: 4 }
+}
