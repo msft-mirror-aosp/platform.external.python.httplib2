@@ -1,5 +1,5 @@
-sudo: false
 language: python
+dist: xenial
 
 cache:
   apt: true
@@ -13,11 +13,10 @@ env:
     - pip_install_common='pip>=9.0 setuptools>=36.2 wheel>=0.30'
 python:
   - 2.7
-  - 3.3
   - 3.4
   - 3.5
   - 3.6
-  - pypy
+  - 3.7
 matrix:
   fast_finish: true
 install: pip install $pip_install_common 'codecov>=2.0.15' -r requirements-test.txt
@@ -28,6 +27,11 @@ stages:
   - release
 jobs:
   include:
+    - stage: test
+      python: pypy
+      dist: trusty
+      install: pip install $pip_install_common 'codecov>=2.0.15' -r requirements-test.txt
+      script: script/test -sv && codecov
     - stage: test
       env: _=py2-pep8
       python: 2.7

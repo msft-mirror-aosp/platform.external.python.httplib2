@@ -1,8 +1,5 @@
 name: "httplib2"
-description:
-    "httplib2 is a comprehensive HTTP client library, httplib2.py supports "
-    "many features left out of other HTTP libraries."
-
+description: "httplib2 is a comprehensive HTTP client library, httplib2.py supports many features left out of other HTTP libraries."
 third_party {
   url {
     type: HOMEPAGE
@@ -10,8 +7,12 @@ third_party {
   }
   url {
     type: GIT
-    value: "https://github.com/httplib2/httplib2/"
+    value: "https://github.com/httplib2/httplib2.git"
   }
-  version: "0.11.3"
-  last_upgrade_date { year: 2018 month: 6 day: 4 }
+  version: "v0.12.1"
+  last_upgrade_date {
+    year: 2019
+    month: 2
+    day: 21
+  }
 }
