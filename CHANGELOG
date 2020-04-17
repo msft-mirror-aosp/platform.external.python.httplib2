@@ -1,3 +1,14 @@
+0.17.2
+
+  python3 + debug + IPv6 disabled: https raised
+  "IndexError: Replacement index 1 out of range for positional args tuple"
+  https://github.com/httplib2/httplib2/issues/161
+
+0.17.1
+
+  python3: no_proxy was not checked with https
+  https://github.com/httplib2/httplib2/issues/160
+
 0.17.0
 
   feature: Http().redirect_codes set, works after follow(_all)_redirects check
