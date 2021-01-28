@@ -10,7 +10,10 @@ third_party {
     value: "https://github.com/httplib2/httplib2.git"
   }
   version: "v0.18.1"
-  license_type: NOTICE
+  # would be NOTICE save for:
+  #   test/other_cacerts.txt
+  #   doc/html/_static/jquery.js
+  license_type: RESTRICTED
   last_upgrade_date {
     year: 2020
     month: 5
